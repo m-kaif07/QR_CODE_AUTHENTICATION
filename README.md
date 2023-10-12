@@ -1,0 +1,8 @@
+# QR_CODE_AUTHENTICATION
+QR and Barcode authentication project using Python, OpenCV, and Pyzbar is a powerful tool for verifying the authenticity of QR codes and barcodes. It utilizes computer vision techniques and the Pyzbar library to detect &amp; validate the codes. It can be used in various domains such as- Product Authentication, Access Control and Security, Payment, etc
+The project likely follows these general steps:
+
+1) QR Code/Barcode Detection: OpenCV is used to capture and process images or video frames to identify QR codes and barcodes present in the input.
+2) Decoding and Validation: Once the QR codes and barcodes are detected, the Pyzbar library is used to decode the extracted data from the codes. It supports various barcode formats such as QR codes, barcodes,. The decoded data is then validated to determine its authenticity.
+3) Authentication: The authentication process involves comparing the decoded data against a trusted source (text file in our case, which contains data/info. about authorized id's of persons) or a predefined set of valid codes. This comparison can be done by checking the code against a database or comparing it with known valid codes stored locally or on a remote server.
+4) Response and Output: Depending on the authentication result, the project can provide appropriate feedback to the user, in the form of a text writtem over the detected QR Code. For example, if the code is authentic, it can display a success (Authorized) message or perform a specific action. Conversely, if the code is found to be invalid or tampered, it can display an error (Un-Authorized) message and reject the code.
